@@ -159,7 +159,7 @@
             // 
             this.lblCount.AutoSize = true;
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblCount.Location = new System.Drawing.Point(80, 97);
+            this.lblCount.Location = new System.Drawing.Point(102, 97);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(21, 24);
             this.lblCount.TabIndex = 3;

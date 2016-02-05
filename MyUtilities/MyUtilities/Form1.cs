@@ -50,7 +50,6 @@ namespace MyUtilities
         {
             count=0;
             lblCount.Text = Convert.ToString (count);
-
         }
     }
 }
