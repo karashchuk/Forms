@@ -60,9 +60,45 @@ namespace MyUtilities
             int n;
             n = rnd.Next(Convert.ToInt32 (numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value)+1);
             lblRandom.Text = n.ToString();
+            if (cbRandom.Checked)
+            {
+                int i = 0;
+                while (tbRandom.Text.IndexOf(n.ToString()) != -1)
+                {
+                    n = rnd.Next(Convert.ToInt32(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value) + 1);
+                    i++;
+                    if (i > 1000) break;
+                }
+               if(i<=1000) tbRandom.AppendText(n + "\n");
+            }
+            else
+            {
+                tbRandom.AppendText(n + "\n");
+            }
+
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbRandom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRandomClear_Click(object sender, EventArgs e)
+        {
+            tbRandom.Clear();
+        }
+
+        private void btnRandomCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(tbRandom.Text);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
