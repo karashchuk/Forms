@@ -193,8 +193,6 @@ namespace MyUtilities
             double m2 = metrica[cbTo.Text];
             double n = Convert.ToDouble(tbFrom.Text);
             tbTo.Text = (n * m1 / m2).ToString();
-
-
         }
     }
 }
